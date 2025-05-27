@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/especial")
-@CrossOrigin("*")
 public class EspecialDayController {
 
     EspecialDayService especialDayService;
