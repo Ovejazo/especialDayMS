@@ -2,12 +2,14 @@ package com.tutorial.especialdayservice.controller;
 
 import com.tutorial.especialdayservice.entity.EspecialDayEntity;
 import com.tutorial.especialdayservice.service.EspecialDayService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/especial")
 public class EspecialDayController {
 
+    @Autowired
     EspecialDayService especialDayService;
 
     @GetMapping("/{birthday}")
